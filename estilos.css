@@ -1,0 +1,671 @@
+body {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MENÚ */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    height: 80px;
+    background-color: #0a0a0a;
+    border-bottom: 3px solid #E8002D;
+    position: sticky;
+    top: 0;
+}
+
+.menu_logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    color: #E8002D;
+    letter-spacing: 4px;
+}
+
+.menu_links {
+    display: flex;
+    gap: 50px;
+}
+
+.menu_item {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu_item:hover {
+    color: #ffffff;
+}
+
+.activo {
+    color: #E8002D;
+    border-bottom: 2px solid #E8002D;
+    padding-bottom: 4px;
+}
+
+/* BOTÓN ROJO */
+
+.boton_rojo {
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    background-color: #E8002D;
+    color: #ffffff;
+    padding: 14px 55px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton_rojo:hover {
+    background-color: #b0001f;
+}
+
+/* TÍTULOS REUTILIZABLES */
+
+.seccion_titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 65px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.seccion_subtitulo {
+    font-size: 18px;
+    color: #888888;
+    margin-bottom: 50px;
+}
+
+/* ENCABEZADO DE PÁGINAS INTERIORES */
+
+.pagina_header {
+    background-color: #1a0000;
+    background-size: cover;
+    background-position: center;
+}
+
+.pagina_header_oscuro {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 100px 80px 80px;
+}
+
+.pagina_titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+
+.pagina_subtitulo {
+    font-size: 20px;
+    color: #aaaaaa;
+    margin-top: 10px;
+}
+
+/* HERO — index.html */
+
+.hero {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero_fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero_oscurecedor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.hero_contenido {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 80px;
+}
+
+.hero_etiqueta {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #E8002D;
+}
+
+.hero_titulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 130px;
+    letter-spacing: 6px;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.hero_subtitulo {
+    font-size: 22px;
+    color: #cccccc;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* BANDA DE DATOS — index.html */
+
+.datos {
+    display: flex;
+    justify-content: center;
+    background-color: #E8002D;
+}
+
+.dato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 50px 70px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dato:last-child {
+    border-right: none;
+}
+
+.dato_numero {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.dato_texto {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* SOBRE — index.html */
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 100px 80px;
+    background-color: #1a1a1a;
+}
+
+.sobre_imagen {
+    width: 500px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.sobre_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 550px;
+}
+
+.sobre_parrafo {
+    font-size: 17px;
+    color: #aaaaaa;
+    line-height: 1.8;
+}
+
+/* PREVIEW CORREDORES — index.html */
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 80px;
+    background-color: #111111;
+}
+
+.preview_lista {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.preview_card {
+    background-color: #1a1a1a;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.preview_card:hover {
+    transform: translateY(-8px);
+}
+
+.preview_foto {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.preview_nombre {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding: 20px 20px 5px;
+}
+
+.preview_equipo {
+    font-size: 14px;
+    color: #888888;
+    padding: 0px 20px 5px;
+    font-weight: 700;
+}
+
+.preview_num {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    color: #E8002D;
+    padding: 5px 20px 20px;
+}
+
+/* CORREDORES — corredores.html */
+
+.corredores {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 60px 80px;
+    background-color: #111111;
+}
+
+.corredor_card {
+    display: flex;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.corredor_invertido {
+    flex-direction: row-reverse;
+}
+
+.corredor_foto {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    flex-shrink: 0;
+}
+
+.corredor_info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 40px 50px;
+    justify-content: center;
+}
+
+.corredor_numero {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    color: #E8002D;
+    line-height: 1;
+}
+
+.corredor_nombre {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 55px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.corredor_equipo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #aaaaaa;
+    letter-spacing: 1px;
+}
+
+.corredor_pais {
+    font-size: 15px;
+    color: #666666;
+}
+
+.corredor_stats {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0px;
+    border-top: 1px solid #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.stat_item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat_val {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    color: #E8002D;
+    line-height: 1;
+}
+
+.stat_lab {
+    font-size: 12px;
+    color: #666666;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.corredor_desc {
+    font-size: 15px;
+    color: #888888;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+/* EQUIPOS GRANDES — equipos.html */
+
+.equipos_detalle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 60px 80px;
+    background-color: #111111;
+}
+
+.equipo_grande {
+    display: flex;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.equipo_grande_invertido {
+    flex-direction: row-reverse;
+}
+
+.equipo_grande_color {
+    width: 8px;
+    flex-shrink: 0;
+}
+
+.equipo_grande_foto {
+    width: 420px;
+    height: 280px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.equipo_grande_info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px 50px;
+    justify-content: center;
+    flex: 1;
+}
+
+.equipo_grande_nombre {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.equipo_grande_pais {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 700;
+}
+
+.equipo_grande_desc {
+    font-size: 15px;
+    color: #888888;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.equipo_grande_stats {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.equipo_stat {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.equipo_stat_val {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    color: #E8002D;
+    line-height: 1;
+}
+
+.equipo_stat_lab {
+    font-size: 12px;
+    color: #555555;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* OTROS EQUIPOS — equipos.html */
+
+.otros_equipos {
+    padding: 80px 80px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.otros_lista {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.otro_equipo {
+    background-color: #222222;
+    width: 230px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 3px;
+    transition: transform 0.3s;
+}
+
+.otro_equipo:hover {
+    transform: translateY(-6px);
+}
+
+.otro_color {
+    height: 5px;
+    width: 40px;
+    border-radius: 3px;
+}
+
+.otro_nombre {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.otro_pilotos {
+    font-size: 14px;
+    color: #aaaaaa;
+    font-weight: 700;
+}
+
+.otro_pais {
+    font-size: 13px;
+    color: #555555;
+}
+
+/* CIRCUITOS — circuitos.html */
+
+.circuitos_detalle {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px 80px;
+    background-color: #111111;
+}
+
+.circuito_card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.circuito_foto {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.circuito_info {
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.circuito_nombre {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 44px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.circuito_pais {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 700;
+}
+
+.circuito_datos_fila {
+    display: flex;
+    gap: 50px;
+    padding: 20px 0px;
+    border-top: 1px solid #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.circuito_dato_item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cdato_val {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+    color: #E8002D;
+    line-height: 1;
+}
+
+.cdato_lab {
+    font-size: 12px;
+    color: #555555;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.circuito_desc {
+    font-size: 16px;
+    color: #888888;
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #0a0a0a;
+    border-top: 3px solid #E8002D;
+    padding: 50px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer_logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    color: #E8002D;
+    letter-spacing: 4px;
+}
+
+.footer_texto {
+    font-size: 14px;
+    color: #444444;
+}
+
+.footer_links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer_enlace {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666666;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.footer_enlace:hover {
+    color: #E8002D;
+}
